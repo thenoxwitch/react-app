@@ -9,8 +9,8 @@ function App() {
         <Weather city="Mexico" />
 
         <Audio
-          height="80"
-          width="80"
+          height="250"
+          width="250"
           radius="9"
           color="plum"
           ariaLabel="loading"
