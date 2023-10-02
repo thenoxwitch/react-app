@@ -39,7 +39,7 @@ export default function App() {
       <p class="bottom-link">
         💜
         <a
-          href="https://github.com/thenoxwitch/weather-app-shecodes-project"
+          href="https://github.com/thenoxwitch/react-app"
           target="_blank"
           rel="noreferrer"
         >
