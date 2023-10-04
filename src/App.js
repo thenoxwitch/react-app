@@ -44,7 +44,7 @@ export default function App() {
           rel="noreferrer"
         >
           Open Source Code
-        </a>
+        </a>{" "}
         by{" "}
         <a href="https://athanox-frontend.com" target="_blank" rel="noreferrer">
           Atenas G I.
