@@ -45,7 +45,11 @@ export default function App() {
         >
           Open Source Code
         </a>
-        by Atenas G I.💜
+        by{" "}
+        <a href="https://athanox-frontend.com" target="_blank" rel="noreferrer">
+          Atenas G I.
+        </a>
+        💜
       </p>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
