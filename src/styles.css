@@ -319,6 +319,10 @@ a:hover {
   border-radius: 15px;
 }
 
+.rainbow-gif {
+  text-align: center;
+}
+
 .dark .container-sm {
   background: rgba(225, 225, 225, 0.1);
   border-color: blueviolet;
