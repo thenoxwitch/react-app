@@ -10,7 +10,7 @@ export default function App() {
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             {" "}
-            WeatherPixel
+            weather cat
           </a>
           <img
             src="https://cdn-icons-png.flaticon.com/128/365/365865.png"
@@ -22,6 +22,12 @@ export default function App() {
 
       <div class="container-sm">
         <br />
+        <div class="text-container">
+          <p class="intro">
+            Hi! <br /> i am "weather cat" and i will use my cuteness to tell you
+            the weather!
+          </p>
+        </div>
         <img
           class="rainbow-gif"
           src="https://media.giphy.com/media/SzBJFywvZ1UbSc0mNI/giphy.gif"

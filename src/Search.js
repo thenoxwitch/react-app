@@ -32,7 +32,7 @@ export default function Search() {
     <form onSubmit={handleSubmit}>
       <input
         type="search"
-        placeholder="Enter a city here"
+        placeholder="Enter a prrrrrrr city... here"
         onChange={updateCity}
       />
       <button type="Submit">Search</button>
@@ -44,10 +44,10 @@ export default function Search() {
       <div>
         {form}
         <ul>
-          <li>{Math.round(weather.temperature)}°C</li>
-          <li>{weather.info}</li>
-          <li>Wind:{Math.round(weather.wind)}Km/h</li>
-          <li>Humidity:{weather.humidity}%</li>
+          <li>{Math.round(weather.temperature)}°C (miauuuuu)</li>
+          <li>fluffs: {weather.info}</li>
+          <li>wind purrrs:{Math.round(weather.wind)}Km/h</li>
+          <li>humidity:{weather.humidity}%</li>
 
           <li>
             <img src={weather.icon} alt="weather-icon" />

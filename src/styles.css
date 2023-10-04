@@ -2,7 +2,7 @@ body {
   display: block;
   margin: 0 auto;
   padding-top: 40px;
-  font-family: "Pixelify Sans", cursive;
+  font-family: monospace;
   background-color: black;
 }
 
@@ -85,7 +85,7 @@ h1 {
   padding-top: 10px;
   padding-bottom: 50px;
   color: rgb(251, 240, 178);
-  text-shadow: 10px 10px 20px rgb(133, 107, 138);
+  text-shadow: 10px 10px 20px rgb(239, 226, 241);
   font-family: "Pixelify Sans", cursive;
   cursor: default;
 }
@@ -97,11 +97,30 @@ h1:hover {
   cursor: default;
   text-shadow: 10px 10px 20px rgb(255, 255, 255);
 }
+
+.text-container {
+  max-width: 250px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.intro {
+  font-size: 18px;
+  text-align: center;
+
+  color: rgb(185, 146, 216);
+  font-family: "Courier New", Courier, monospace;
+  line-height: 14px;
+  word-spacing: -3px;
+  text-transform: uppercase;
+}
 h2 {
   font-size: 20px;
   text-align: center;
   font-weight: 700px;
-  color: rgb(80, 80, 80);
+  color: rgb(185, 146, 216);
+
   margin: auto;
   display: block;
   background: radial-gradient(
@@ -128,7 +147,7 @@ h3 {
   font-weight: bolder;
   position: relative;
   top: -230px;
-  color: rgb(80, 80, 80);
+  color: rgb(185, 146, 216);
   bottom: 50px;
   cursor: default;
   text-shadow: 5px 5px 5px rgb(190, 132, 224);
@@ -142,7 +161,8 @@ h3 {
 
 p {
   font-size: large;
-  color: rgb(80, 80, 80);
+  color: rgb(185, 146, 216);
+
   font-weight: 800;
 }
 
@@ -153,7 +173,7 @@ em {
 
 strong {
   font-family: "Pixelify Sans", cursive;
-  color: rgb(80, 80, 80);
+  color: rgb(185, 146, 216);
 }
 strong:hover {
   color: rgb(209, 178, 238);
@@ -170,7 +190,7 @@ strong:hover {
   text-align: center;
   padding-top: 20px;
   text-align: center;
-  max-width: 50%;
+  max-width: 65%;
   min-width: 200px;
   min-height: 200px;
   margin: auto;
@@ -257,7 +277,7 @@ a:hover {
 }
 
 .navbar {
-  max-width: 50%;
+  max-width: 65%;
   border-radius: 12px;
   border-width: 1px;
   margin: auto;
@@ -268,7 +288,7 @@ a:hover {
 
 .navbar-brand {
   color: rgb(255, 199, 234);
-  font-size: 20px;
+  font-size: 25px;
   text-shadow: 1px 1px 10px rgb(216, 180, 248);
   font-family: "Pixelify Sans", cursive;
   max-width: 50%;
@@ -374,4 +394,51 @@ a:hover {
   position: relative;
   right: -155px;
   bottom: -12px;
+}
+
+@media (max-width: 480px) {
+  .container-sm {
+    max-width: 480px;
+    text-align: center;
+    background: none;
+    margin-bottom: auto;
+    border: none;
+  }
+
+  .navbar {
+    max-width: 100%;
+    margin-top: -40px;
+  }
+
+  body {
+    text-align: center;
+
+    background: linear-gradient(250deg, rgb(216, 180, 248), rgb(255, 199, 234));
+
+    background-size: cover;
+  }
+
+  .bottom-link {
+    margin-bottom: 100px;
+
+    font-size: 15px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .main-icon {
+    position: relative;
+    bottom: 15px;
+  }
+
+  .intro {
+    font-size: 15px;
+    text-align: center;
+
+    color: rgb(185, 146, 216);
+    font-family: "Courier New", Courier, monospace;
+    line-height: 14px;
+    word-spacing: -3px;
+    text-transform: uppercase;
+  }
 }
