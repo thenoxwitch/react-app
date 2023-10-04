@@ -7,7 +7,7 @@ body {
 }
 
 button {
-  color: rgb(154, 31, 255);
+  color: rgb(216, 180, 248);
   font-weight: 15px;
 
   border-radius: 4px;
@@ -44,7 +44,7 @@ button:hover {
 
 input[type="text"] {
   border-radius: 15px;
-  border: 1px solid blueviolet;
+  border: 1px solid rgb(216, 180, 248);
   font-weight: bold;
   max-width: 200px;
   background-image: radial-gradient(592px at 48.2% 50%, rgb(230, 200, 255)) 0%,
@@ -62,7 +62,7 @@ input[type="submit"] {
   max-width: 200px;
   background: radial-gradient(
     592px at 48.2% 50%,
-    rgb(154, 31, 255) 0%,
+    rgb(216, 180, 248) 0%,
     rgb(0, 0, 0) 74.6%
   );
   transform: all 220ms ease-in-out;
@@ -84,14 +84,14 @@ h1 {
   font-weight: bolder;
   padding-top: 10px;
   padding-bottom: 50px;
-  color: aliceblue;
+  color: rgb(251, 240, 178);
   text-shadow: 10px 10px 20px rgb(133, 107, 138);
   font-family: "Pixelify Sans", cursive;
   cursor: default;
 }
 
 h1:hover {
-  color: rgb(153, 45, 255);
+  color: rgb(216, 180, 248);
   transform: all 225ms ease-in-out;
 
   cursor: default;
@@ -101,16 +101,16 @@ h2 {
   font-size: 20px;
   text-align: center;
   font-weight: 700px;
-  color: rgb(216, 216, 216);
+  color: rgb(80, 80, 80);
   margin: auto;
   display: block;
   background: radial-gradient(
     592px at 48.2% 50%,
-    rgb(154, 31, 255) 0%,
-    rgb(162, 101, 211) 74.6%
+    rgb(216, 180, 248) 0%,
+    rgb(202, 237, 255) 74.6%
   );
   box-shadow: 5px 5px 10px rgb(205, 168, 212);
-  width: 100%;
+  max-width: 50%;
   border-radius: 12px;
   cursor: default;
 }
@@ -128,7 +128,7 @@ h3 {
   font-weight: bolder;
   position: relative;
   top: -230px;
-
+  color: rgb(80, 80, 80);
   bottom: 50px;
   cursor: default;
   text-shadow: 5px 5px 5px rgb(190, 132, 224);
@@ -142,7 +142,7 @@ h3 {
 
 p {
   font-size: large;
-  color: darkorchid;
+  color: rgb(80, 80, 80);
   font-weight: 800;
 }
 
@@ -153,6 +153,7 @@ em {
 
 strong {
   font-family: "Pixelify Sans", cursive;
+  color: rgb(80, 80, 80);
 }
 strong:hover {
   color: rgb(209, 178, 238);
@@ -163,8 +164,8 @@ strong:hover {
 }
 
 .container-sm {
-  border: 1px solid rgb(106, 55, 148);
-  box-shadow: 10px 10px 20px rgb(133, 107, 138);
+  border: 1px solid rgb(216, 180, 248);
+  box-shadow: 10px 10px 20px rgb(255, 199, 234, 0.3);
   border-radius: 12px;
   text-align: center;
   padding-top: 20px;
@@ -174,8 +175,8 @@ strong:hover {
   min-height: 200px;
   margin: auto;
 
-  background-color: blueviolet;
-  background: linear-gradient(70deg, rgb(154, 31, 255), rgb(219, 174, 255));
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(250deg, rgb(216, 180, 248), rgb(255, 199, 234));
 }
 .main-icon {
   font-size: 50px;
@@ -204,7 +205,7 @@ strong:hover {
 }
 
 .icons-2:hover {
-  color: rgb(55, 25, 83);
+  color: rgb(216, 180, 248);
   transform: all 220ms ease-in-out;
   scale: calc(1.5);
 
@@ -215,11 +216,11 @@ a {
   color: plum;
 }
 a:hover {
-  color: rgb(153, 45, 255);
+  color: rgb(245, 230, 239);
   transform: all 225ms ease-in-out;
-  scale: calc(1.1);
+  scale: calc(1.2);
   cursor: pointer;
-  text-shadow: 10px 10px 20px rgb(255, 255, 255);
+  text-shadow: 1px 1px 20px rgb(255, 199, 234);
 }
 
 .units {
@@ -266,9 +267,9 @@ a:hover {
 }
 
 .navbar-brand {
-  color: blueviolet;
+  color: rgb(255, 199, 234);
   font-size: 20px;
-  text-shadow: 5px 5px 15px rgb(123, 52, 170);
+  text-shadow: 1px 1px 10px rgb(216, 180, 248);
   font-family: "Pixelify Sans", cursive;
   max-width: 50%;
 }
