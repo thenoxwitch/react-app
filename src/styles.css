@@ -2,29 +2,27 @@ body {
   display: block;
   margin: 0 auto;
   padding-top: 40px;
-  font-family: monospace;
+  font-family: "Pixelify Sans", cursive;
   background-color: black;
 }
 
 button {
   color: rgb(154, 31, 255);
-  font-weight: 12px;
-  font-size: 16px;
-  border-radius: 15px;
-  max-width: 100px;
+  font-weight: 15px;
+
+  border-radius: 4px;
+
   background: white;
 
   transform: all 220ms ease-in-out;
   border: none;
   box-shadow: 5px 5px 10px rgb(28, 4, 32);
-  position: relative;
-  top: 33px;
-  right: -195px;
 }
 
 .bottom-link {
   text-align: center;
   color: blueviolet;
+  font-family: "Pixelify Sans", cursive;
 }
 button:hover {
   transform-style: pointer;
@@ -45,7 +43,7 @@ button:hover {
 }
 
 input[type="text"] {
-  border-radius: 300px;
+  border-radius: 15px;
   border: 1px solid blueviolet;
   font-weight: bold;
   max-width: 200px;
@@ -60,7 +58,7 @@ input[type="text"] {
 
 input[type="submit"] {
   color: white;
-  border-radius: 300px;
+  border-radius: 15px;
   max-width: 200px;
   background: radial-gradient(
     592px at 48.2% 50%,
@@ -82,7 +80,7 @@ input[type="submit"]:hover {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bolder;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -112,11 +110,13 @@ h2 {
     rgb(162, 101, 211) 74.6%
   );
   box-shadow: 5px 5px 10px rgb(205, 168, 212);
-  width: 20%;
+  width: 100%;
   border-radius: 12px;
   cursor: default;
-  position: relative;
-  top: -20px;
+}
+
+search {
+  border-radius: 12px;
 }
 
 .dark h2 {
@@ -127,9 +127,8 @@ h3 {
   font-size: 40px;
   font-weight: bolder;
   position: relative;
-  top: -250px;
-  left: 10px;
-  right: 50px;
+  top: -230px;
+
   bottom: 50px;
   cursor: default;
   text-shadow: 5px 5px 5px rgb(190, 132, 224);
@@ -149,13 +148,18 @@ p {
 
 em {
   cursor: default;
+  font-family: "Pixelify Sans", cursive;
 }
 
+strong {
+  font-family: "Pixelify Sans", cursive;
+}
 strong:hover {
   color: rgb(209, 178, 238);
   transform: all 220ms ease-in-out;
   scale: calc(1.5);
   cursor: default;
+  font-family: "Pixelify Sans", cursive;
 }
 
 .container-sm {
@@ -177,7 +181,7 @@ strong:hover {
   font-size: 50px;
   color: rgb(237, 222, 248);
   position: relative;
-  top: -260px;
+  bottom: 45px;
   text-shadow: 10px 10px 20px rgb(133, 107, 138);
   background: none;
   border-radius: 15px;
@@ -219,10 +223,11 @@ a:hover {
 }
 
 .units {
-  font-size: 20px;
+  font-size: 30px;
   position: relative;
-  top: -310px;
-  right: -75px;
+  top: -285px;
+
+  right: -35px;
   font-family: "Pixelify Sans", cursive;
 }
 
@@ -251,7 +256,7 @@ a:hover {
 }
 
 .navbar {
-  max-width: 45%;
+  max-width: 50%;
   border-radius: 12px;
   border-width: 1px;
   margin: auto;
@@ -264,6 +269,8 @@ a:hover {
   color: blueviolet;
   font-size: 20px;
   text-shadow: 5px 5px 15px rgb(123, 52, 170);
+  font-family: "Pixelify Sans", cursive;
+  max-width: 50%;
 }
 
 .dropdown-item {

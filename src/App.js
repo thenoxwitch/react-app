@@ -6,7 +6,7 @@ import "./Search.css";
 export default function App() {
   return (
     <div className="App">
-      <nav class="navbar navbar-expand-lg bg-light navbar">
+      <nav class="navbar navbar-expand-lg bg-dark navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             {" "}
@@ -24,19 +24,52 @@ export default function App() {
         <br />
         <img
           class="rainbow-gif"
-          src="https://media.giphy.com/media/huyIAhSLfOeCk/giphy.gif"
-          width="50px"
+          src="https://media.giphy.com/media/SzBJFywvZ1UbSc0mNI/giphy.gif"
+          width="150px"
           alt="cute"
         />
         <br />
-
-        <Search />
+        <div class="container-fluid">
+          <Search />
+        </div>
 
         <br />
-        <div class="weather-forecast" id="forecast"></div>
+        <div>
+          {" "}
+          <h2>Tuesday 16:00</h2>
+          <h1>London</h1>
+          <div class="row">
+            <div class="col">
+              <div class="conditions">
+                <strong> Humidity </strong>
+                <br />
+                <em> 24% </em>
+                <br />
+                <strong> Wind</strong>
+                <br />
+                <em> 23km/hr </em>
+              </div>
+            </div>
+            <div class="col">
+              <div class="description">
+                <strong>Mostly Cloudy</strong>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+
+        <img
+          class="main-icon"
+          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+          alt="clear"
+          id="icon"
+        />
+        <h3 id="temperature">16</h3>
+        <p class="units">C</p>
       </div>
       <br />
-      <p class="bottom-link">
+      <p class="container-fluid bottom-link">
         💜
         <a
           href="https://github.com/thenoxwitch/react-app"

@@ -44,8 +44,8 @@ export default function Search() {
       <div>
         {form}
         <ul>
-          <li>Temperature:{Math.round(weather.temperature)}°C</li>
-          <li>Info: {weather.info}</li>
+          <li>{Math.round(weather.temperature)}°C</li>
+          <li>{weather.info}</li>
           <li>Wind:{Math.round(weather.wind)}Km/h</li>
           <li>Humidity:{weather.humidity}%</li>
 
