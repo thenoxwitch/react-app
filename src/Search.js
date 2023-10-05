@@ -32,7 +32,7 @@ export default function Search() {
     <form onSubmit={handleSubmit}>
       <input
         type="search"
-        placeholder="Enter a prrrrrrr city... here"
+        placeholder="Enter a city prrrr..."
         onChange={updateCity}
       />
       <button type="Submit">Search</button>

@@ -6,11 +6,11 @@ import "./Search.css";
 export default function App() {
   return (
     <div className="App">
-      <nav class="navbar navbar-expand-lg bg-dark navbar">
+      <nav class="navbar navbar-expand-lg bg-dark navbar navbar-static-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             {" "}
-            weather cat
+            weather.cat
           </a>
           <img
             src="https://cdn-icons-png.flaticon.com/128/365/365865.png"
@@ -22,9 +22,10 @@ export default function App() {
 
       <div class="container-sm">
         <br />
-        <div class="text-container">
+
+        <div class="bubble left">
           <p class="intro">
-            Hi! <br /> I am weather cat, I will tell you the weather...
+            Hi! <br /> I am weather cat...
           </p>
         </div>
         <img
@@ -73,7 +74,7 @@ export default function App() {
         <h3 id="temperature">16</h3>
         <p class="units">C</p>
       </div>
-      <br />
+
       <p class="container-fluid bottom-link">
         💜
         <a
