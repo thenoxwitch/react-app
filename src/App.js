@@ -24,8 +24,7 @@ export default function App() {
         <br />
         <div class="text-container">
           <p class="intro">
-            Hi! <br /> i am "weather cat" and i will use my cuteness to tell you
-            the weather!
+            Hi! <br /> I am weather cat, I will tell you the weather...
           </p>
         </div>
         <img
