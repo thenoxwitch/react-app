@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Search() {
   let [city, setCity] = useState("");
@@ -9,6 +9,7 @@ export default function Search() {
 
   function displayWeather(response) {
     console.log(response.data);
+
     setLoading(true);
 
     setWeather({
@@ -19,6 +20,7 @@ export default function Search() {
       date: new Date(response.data.dt * 1000),
       info: response.data.weather[0].description,
       city: response.data.name,
+     
     });
   }
   function handleSubmit(event) {
@@ -48,7 +50,7 @@ export default function Search() {
         {form}
         <div>
           {" "}
-          <h2>Tuesday 16:00</h2>
+          <h2><FormattedDate date={weather.date} /></h2>
           <h1>{weather.city}</h1>
           <div class="row">
             <div class="col">
