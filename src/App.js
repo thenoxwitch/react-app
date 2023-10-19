@@ -3,6 +3,7 @@ import "./styles.css";
 import Search from "./Search";
 import "./Search.css";
 
+
 export default function App() {
   return (
     <div className="App">
@@ -40,39 +41,8 @@ export default function App() {
         </div>
 
         <br />
-        <div>
-          {" "}
-          <h2>Tuesday 16:00</h2>
-          <h1>London</h1>
-          <div class="row">
-            <div class="col">
-              <div class="conditions">
-                <strong> Humidity </strong>
-                <br />
-                <em> 24% </em>
-                <br />
-                <strong> Wind</strong>
-                <br />
-                <em> 23km/hr </em>
-              </div>
-            </div>
-            <div class="col">
-              <div class="description">
-                <strong>Mostly Cloudy</strong>
-              </div>
-            </div>
-          </div>
-          <br />
-        </div>
+        
 
-        <img
-          class="main-icon"
-          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-          alt="clear"
-          id="icon"
-        />
-        <h3 id="temperature">16</h3>
-        <p class="units">C</p>
       </div>
 
       <p class="container-fluid bottom-link">

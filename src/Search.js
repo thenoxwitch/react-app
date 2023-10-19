@@ -8,6 +8,7 @@ export default function Search() {
   let [loading, setLoading] = useState(false);
 
   function displayWeather(response) {
+    console.log(response.data);
     setLoading(true);
 
     setWeather({
@@ -15,7 +16,9 @@ export default function Search() {
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
       info: response.data.weather[0].description,
+      city: response.data.name,
     });
   }
   function handleSubmit(event) {
@@ -43,16 +46,34 @@ export default function Search() {
     return (
       <div>
         {form}
-        <ul>
-          <li>{Math.round(weather.temperature)}°C (miauuuuu)</li>
-          <li>fluffs: {weather.info}</li>
-          <li>wind purrrs:{Math.round(weather.wind)}Km/h</li>
-          <li>humidity:{weather.humidity}%</li>
+        <div>
+          {" "}
+          <h2>Tuesday 16:00</h2>
+          <h1>{weather.city}</h1>
+          <div class="row">
+            <div class="col">
+              <div class="conditions">
+                <strong> Humidity </strong>
+                <br />
+                <em> {weather.humidity}</em>
+                <br />
+                <strong> Wind</strong>
+                <br />
+                <em> {Math.round(weather.wind)}km/h</em>
+              </div>
+            </div>
+            <div class="col">
+              <div class="description">
+                <strong>{weather.info}</strong>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
 
-          <li>
-            <img src={weather.icon} alt="weather-icon" />
-          </li>
-        </ul>
+        <img class="main-icon" src={weather.icon} alt="clear" id="icon" />
+        <h3 id="temperature">{Math.round(weather.temperature)}</h3>
+        <p class="units">C</p>
       </div>
     );
   } else {
