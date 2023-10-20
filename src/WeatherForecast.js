@@ -18,7 +18,7 @@ useEffect(() => {setLoaded(false);}  , [props.coordinates]);
 
 if (loaded) {
      return (
-       <div className="WeatherForecast d-inline-flex p-2 ">
+       <div className="WeatherForecast d-inline-flex p-2">
          <div className="row">
            {forecast.map(function (dailyForecast, index) {
              if (index < 5)
