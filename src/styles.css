@@ -453,7 +453,7 @@ a:hover {
 
   .main-icon {
     position: relative;
-    bottom: 15px;
+    top: -280px;
   }
 
   .intro {

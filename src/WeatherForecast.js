@@ -18,17 +18,16 @@ useEffect(() => {setLoaded(false);}  , [props.coordinates]);
 
 if (loaded) {
      return (
-       <div className="WeatherForecast">
+       <div className="WeatherForecast d-inline-flex p-2">
          <div className="row">
-            {forecast.map(function(dailyForecast, index) {
-                if (index < 5)
-                return (
-                  <div className="col" key={index}>
-                    <WeatherForecastDay data={dailyForecast} />
-                  </div>
-                );
-            })}
-          
+           {forecast.map(function (dailyForecast, index) {
+             if (index < 5)
+               return (
+                 <div className="col" key={index}>
+                   <WeatherForecastDay data={dailyForecast} />
+                 </div>
+               );
+           })}
          </div>
        </div>
      );
