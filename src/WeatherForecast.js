@@ -21,12 +21,15 @@ if (loaded) {
        <div className="WeatherForecast d-inline-flex p-2">
          <div className="row">
            {forecast.map(function (dailyForecast, index) {
-             if (index < 5)
+             if (index < 5) {
                return (
                  <div className="col" key={index}>
                    <WeatherForecastDay data={dailyForecast} />
                  </div>
                );
+             } else {
+              return null;
+             }
            })}
          </div>
        </div>
