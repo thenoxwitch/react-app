@@ -163,7 +163,7 @@ h3 {
   font-size: 40px;
   font-weight: bolder;
   
-  color: rgb(185, 146, 216);
+  color: rgb(91, 43, 153);
   bottom: 50px;
   cursor: default;
   text-shadow: 5px 5px 5px rgb(190, 132, 224);
@@ -185,11 +185,12 @@ p {
 em {
   cursor: default;
   font-family: "Pixelify Sans", cursive;
+  color: rgb(91, 43, 153);
 }
 
 strong {
   font-family: "Pixelify Sans", cursive;
-  color: rgb(185, 146, 216);
+  color: rgb(147, 118, 184);
 }
 strong:hover {
   color: rgb(209, 178, 238);
@@ -252,7 +253,7 @@ a {
   color: plum;
 }
 a:hover {
-  color: rgb(245, 230, 239);
+  color: rgb(231, 141, 195);
   transform: all 225ms ease-in-out;
   scale: calc(1.2);
   cursor: pointer;
@@ -262,9 +263,9 @@ a:hover {
 .units {
   font-size: 20px;
   position: relative;
-  
+  color: rgb(91, 43, 153);
    top: -40px;
-  right: -45px;
+  right: -50px;
   font-family: "Pixelify Sans", cursive;
 }
 
@@ -338,6 +339,7 @@ a:hover {
 .description {
   font-family: "Press Start 2P", cursive;
   font-size: small;
+  
 }
 
 .about-info {

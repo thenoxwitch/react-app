@@ -1,0 +1,11 @@
+.WeatherForecast {
+    text-align: center;
+    font-size: 14px;
+    color:rgb(91, 43, 153);
+    font-family: "Pixelify Sans", cursive;
+}
+
+.forecast-temperature-min {
+    opacity: 0.6;
+    margin-left: 6px;
+}
