@@ -1,7 +1,8 @@
 import "./App.css";
 import "./styles.css";
-import Search from "./Search";
-import "./Search.css";
+import Weather from "./Weather";
+import "./Weather.css"
+
 
 
 export default function App() {
@@ -37,7 +38,7 @@ export default function App() {
         />
         <br />
         <div class="container-fluid">
-          <Search />
+          <Weather />
         </div>
 
         <br />

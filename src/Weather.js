@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
 
-export default function Search() {
+import WeatherTemperature from "./WeatherTemperature";
+import WeatherInfo from "./WeatherInfo";
+
+export default function Weather(props) {
   let [city, setCity] = useState("");
   let [weather, setWeather] = useState("{}");
   let [loading, setLoading] = useState(false);
@@ -41,8 +43,10 @@ export default function Search() {
         onChange={updateCity}
       />
       <button type="Submit">Search</button>
+  
     </form>
   );
+        
 
   if (loading) {
     return (
@@ -50,32 +54,14 @@ export default function Search() {
         {form}
         <div>
           {" "}
-          <h2><FormattedDate date={weather.date} /></h2>
-          <h1>{weather.city}</h1>
-          <div class="row">
-            <div class="col">
-              <div class="conditions">
-                <strong> Humidity </strong>
-                <br />
-                <em> {weather.humidity}</em>
-                <br />
-                <strong> Wind</strong>
-                <br />
-                <em> {Math.round(weather.wind)}km/h</em>
-              </div>
-            </div>
-            <div class="col">
-              <div class="description">
-                <strong>{weather.info}</strong>
-              </div>
-            </div>
-          </div>
+         <WeatherInfo data={weather}/>
           <br />
         </div>
 
         <img class="main-icon" src={weather.icon} alt="clear" id="icon" />
-        <h3 id="temperature">{Math.round(weather.temperature)}</h3>
-        <p class="units">C</p>
+<div>
+      
+       </div>
       </div>
     );
   } else {

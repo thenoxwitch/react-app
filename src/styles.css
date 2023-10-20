@@ -162,8 +162,7 @@ search {
 h3 {
   font-size: 40px;
   font-weight: bolder;
-  position: relative;
-  top: -230px;
+  
   color: rgb(185, 146, 216);
   bottom: 50px;
   cursor: default;
@@ -219,7 +218,7 @@ strong:hover {
   font-size: 50px;
   color: rgb(237, 222, 248);
   position: relative;
-  bottom: 45px;
+  bottom: 300px;
   text-shadow: 10px 10px 20px rgb(133, 107, 138);
   background: none;
   border-radius: 15px;
@@ -261,11 +260,11 @@ a:hover {
 }
 
 .units {
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
-  top: -285px;
-
-  right: -35px;
+  
+   top: -40px;
+  right: -45px;
   font-family: "Pixelify Sans", cursive;
 }
 
